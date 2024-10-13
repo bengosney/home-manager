@@ -15,11 +15,3 @@ repos:
     files: requirements.*\.in
   - id: mixed-line-ending
     args: [--fix, lf]
-- repo: https://github.com/mrtazz/checkmake
-  rev: 0.2.2
-  hooks:
-  - id: checkmake
-#- repo: https://github.com/NixOS/nixfmt
-#  rev: d0c0cda4fe6b7ae2b9aa37f3ee15e6412573eb01
-#  hooks:
-#  - id: nixfmt

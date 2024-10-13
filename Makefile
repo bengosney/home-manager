@@ -1,4 +1,4 @@
-.PHONY: help update switch
+.PHONY: help update switch clean
 .DEFAULT_GOAL:=help
 
 help: ## Display this help
@@ -9,3 +9,8 @@ switch: ## Apply changes
 
 update: ## Update packages
 	nix-shell --run "niv update"
+
+clean: ## Clean the system
+	sudo nix profile wipe-history --older-than 7d --profile /nix/var/nix/profiles/system
+	sudo nix-collect-garbage --delete-old
+	nix-collect-garbage --delete-old
