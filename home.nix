@@ -44,6 +44,11 @@
     enable = true;
     userName = "Ben Gosney";
     userEmail = "bengosney@googlemail.com";
+    extraConfig = {
+      push = {
+        autoSetupRemote = true;
+      };
+    };
   };
 
   programs.emacs.enable = true;
