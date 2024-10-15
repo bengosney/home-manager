@@ -54,4 +54,10 @@
   programs.emacs.enable = true;
 
   programs.home-manager.enable = true;
+
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    nix-direnv.enable = true;
+  };
 }
