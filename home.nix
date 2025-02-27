@@ -10,7 +10,7 @@
     enable = true;
     enableCompletion = true;
     bashrcExtra = ''
-      export PATH="$PATH:$HOME/bin:$HOME/.local/bin:~/.nix-profile/bin"
+      export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/.nix-profile/bin:$HOME/.asdf/shims"
 
       ## Re-add deprecated autocomplete functions
       _have() {
