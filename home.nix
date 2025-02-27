@@ -47,6 +47,7 @@
     direnv
     uv
     nixpkgs-fmt
+    asdf
   ];
 
   programs.starship = {
