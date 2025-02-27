@@ -48,6 +48,7 @@
     uv
     nixpkgs-fmt
     asdf
+    inotify-tools
   ];
 
   programs.starship = {
