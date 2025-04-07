@@ -26,8 +26,6 @@
       [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
       export EDITOR="emacs -nw"
 
-      alias cookiepy="curl https://gist.githubusercontent.com/bengosney/461645e361892d14db112957ed771a49/raw/Makefile -o Makefile"
-
       if [ -f "$HOME/.cargo/env" ]; then
           source "$HOME/.cargo/env"
       fi
@@ -38,6 +36,7 @@
       update = "sudo apt-get update; sudo apt-get upgrade -y";
       off = "sudo shutdown -h now";
       cog = "uv tool run --from cogapp cog";
+      cookiepy = "curl https://gist.githubusercontent.com/bengosney/461645e361892d14db112957ed771a49/raw/Makefile -o Makefile";
     };
   };
 
