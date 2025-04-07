@@ -37,6 +37,7 @@
       la = "ls -lah";
       update = "sudo apt-get update; sudo apt-get upgrade -y";
       off = "sudo shutdown -h now";
+      cog = "uv tool run --from cogapp cog";
     };
   };
 
