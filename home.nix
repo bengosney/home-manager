@@ -36,6 +36,7 @@
       update = "sudo apt-get update; sudo apt-get upgrade -y";
       off = "sudo shutdown -h now";
       cog = "uv tool run --from cogapp cog";
+      copier = "uv tool run copier";
       cookiepy = "curl https://gist.githubusercontent.com/bengosney/461645e361892d14db112957ed771a49/raw/Makefile -o Makefile";
     };
   };
