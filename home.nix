@@ -50,10 +50,17 @@
     nixpkgs-fmt
     asdf
     inotify-tools
+    atuin
   ];
 
   programs.starship = {
     enable = true;
+  };
+
+  programs.atuin = {
+    enable = true;
+    enableBashIntegration = true;
+    flags = [ "--disable-up-arrow" ];
   };
 
   programs.git = {
