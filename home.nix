@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   home.username = "ben";
@@ -42,9 +42,9 @@
   };
 
   home.packages = with pkgs; [
-    nerdfonts
+    nerd-fonts.fira-code
+    nerd-fonts.symbols-only
     commitizen
-    pre-commit
     direnv
     uv
     nixpkgs-fmt
@@ -66,9 +66,11 @@
 
   programs.git = {
     enable = true;
-    userName = "Ben Gosney";
-    userEmail = "bengosney@googlemail.com";
-    extraConfig = {
+    settings = {
+      user = {
+        Name = "Ben Gosney";
+        Email = "bengosney@googlemail.com";
+      };
       push = {
         autoSetupRemote = true;
       };
