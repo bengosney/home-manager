@@ -51,6 +51,7 @@
     asdf
     inotify-tools
     atuin
+    pnpm
   ];
 
   programs.starship = {
